@@ -6,6 +6,6 @@ for (i=0;i<nImages;i++) {
         title = getTitle; 
         print(title); 
         ids[i]=getImageID; 
-
-        saveAs("jpg", dir+title); 
+		run("Z Project...", "projection=[Max Intensity]");
+        saveAs("jpeg", dir+title); 
 }
